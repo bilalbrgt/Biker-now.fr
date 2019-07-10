@@ -1,0 +1,353 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*supprimer marge bordure etc*/
+}
+/*  ajustement du logo*/
+.bn {
+    height: 53px;
+    top: 1px;
+    z-index: 3;
+    margin: 5px 5% 0 0%;
+}
+
+
+/* modifications des items */
+ul li {
+    width: 230px;
+    opacity: .8;
+    text-align:center;
+    font-size: 20px;
+    float: left;
+
+}
+
+
+.bg-dark
+{
+    background-color: transparent!important;
+}
+/************** fin de la modifications des items **********************/
+
+/* page web*/
+
+#acceuil {
+    background-image:  url(../img/modeles/background-acceuil.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 600px;
+}
+
+#bcontact
+
+{
+    background-image:url(../img/modeles/contact.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+
+}
+
+#modeles
+{
+    background-image: url(../img/modeles/imagesmodeles-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+
+}
+/******************* fin de la page web************************/
+
+/* formulaire */
+section {
+    display: flex;
+    flex-flow: wrap;
+}
+
+
+#feedback-page {
+    text-align: center;
+}
+
+form {width: 50%;}
+
+#form-main {
+    width: 100%;
+    float: left;
+    padding-top: 0px;
+}
+
+
+
+
+.focused {
+    color: #30aed6;
+    border: #30aed6 solid 3px;
+}
+
+
+
+textarea {
+    width: 100%;
+    height: 150px;
+    line-height: 150%;
+    resize: vertical;
+}
+
+input:hover,
+textarea:hover,
+input:focus,
+textarea:focus {
+    background-color: white;
+}
+
+
+
+
+.ease {
+    width: 0px;
+    height: 74px;
+    background-color: #fbfbfb;
+    -webkit-transition: .3s ease;
+    -moz-transition: .3s ease;
+    -o-transition: .3s ease;
+    -ms-transition: .3s ease;
+    transition: .3s ease;
+}
+
+.submit:hover .ease {
+    width: 100%;
+    background-color: white;
+}
+
+@media only screen and (max-width: 580px) {
+    #form-div {
+        left: 3%;
+        margin-right: 3%;
+        width: 88%;
+        margin-left: 0;
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+}
+/* MODIFICATIONS COULEUR LIENS*/
+.nav-link:hover
+{
+    color: white!important;
+}
+.nav-link
+{
+    color: orange!important;
+}
+/* MODIFICATIONS DE LA PAGE D ACCEUIL */
+#home
+{
+    color:  rgba(255,255,255,.5)
+}
+
+h1
+{
+    text-align: center;
+    padding: 50px;
+    color: #1e90ff;
+
+}
+
+h2
+{
+    color: orange;
+    margin-left: 700px;
+    margin-top:  -99px;
+    color: #696969;
+}
+.text1
+{
+
+    text-align: center;
+    top: 980px;
+}
+/* LA CARTE */
+.maps
+
+{
+    width: 40%;
+    margin: 0 700px;
+    margin-bottom: 150%;
+}
+/* fin de la modifications de la carte*/
+
+
+
+/*  alignement du formulaire et de la carte   */
+.contact {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+}
+/* fin de lalaignement de la carte     */
+
+
+/* media queries   la responsivite de la page contact pour la maps et le formulaire de contact */
+
+
+
+/* fin de la media querie*/
+
+
+/*  slider  annimation*/
+.slider
+{
+    border: 10px solid #fff;
+    width: 100%;
+    height: 540px;
+    margin-top: -10%;
+    animation: slide 15s infinite;
+}
+@keyframes slide {
+    0%{
+        background: url(../img/images-sliders/slide1.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    50%{
+        background: url(../img/images-sliders/slide2.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    100%{
+        background: url(../img/images-sliders/slide3.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+/* fin de lannimations svg*/
+
+/* meedia query pour le slider*/
+@media screen and (max-width:768px){
+
+    .slider{
+        margin-left: 0px;
+    }
+
+}
+/* fin du media query */
+
+/* modifications du text n2 de la page dacceuil */
+
+
+.text2
+{
+    color: black;
+
+}
+/* FIN DE LA MODIFICATION DU TEXT2S*/
+
+
+
+#pages4
+{
+
+    background-image:url(../img/modeles/imgrogner.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height:100vh;
+
+
+}
+#info
+{position: absolute;
+    font-family: 'Cabin', Helvetica, Arial, sans-serif;
+    line-height: 15%;
+        top: 95px;
+    color: #353b41;
+}
+
+#register {
+color: black;
+    background-image:url(../img/modeles/TrialsRising_1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+
+
+}
+
+#initiations
+{
+
+    background-image:  url(../img/modeles/initiation.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+}
+
+.ini1
+{
+    color: orange;
+}
+
+footer {
+    background-color: black;
+    padding: 2%;
+    text-align: center;
+    color: white;
+
+
+}
+
+.fef{
+display: flex;
+}
+.mappp
+{
+    margin-left: 2%;
+}
+
+.tarifs
+{
+    font-family: 'Lobster Two', cursive;
+font-size: 30px;
+    text-align: center;
+    padding-top: 2%;
+}
+
+ .text1
+ {
+     text-align: center;
+     font-family: 'Garamond', arial;
+     font-size: 48px;
+     text-shadow: 4px 4px 4px #aaa;
+
+ }
+ p
+ {
+     text-align: center;
+     font-family:serif;
+
+ }
+ .de
+ {
+     color:black;
+
+ }
+
+
+@media screen and (max-width:500px) {
+    .mappp {
+        flex-direction: column;
+        width: 95%;
+        margin: 2% auto;
+        top: 30px;
+
+
+    }
+}

@@ -1,0 +1,33 @@
+{% extends 'base.html.twig' %}
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+
+{% block body %}
+
+    <div id="bcontact">
+
+    <div class="container" >
+    <h1 class="row justify-content-center">  </h1>
+
+    <div class="fef">
+
+        {% for message in app.flashes('succes') %}
+            <div class="alert alert-succes" >
+                {{ message }}
+            </div>
+        {% endfor %}
+
+        {{ form_start(form) }}
+        {{ form_row(form.name,{'label':'Name','attr':{'placeholder':'votre nom '}}) }}
+      {{ form_row(form.email,{'label':'Email','attr':{'placeholder': ' votre adresse email'}}) }}
+      {{ form_row(form.message,{'label':'Message','attr':{'placeholder':'Veuillez saisir votre message'}}) }}
+
+        <input type="submit" id="" value="Envoyer" class="btn btn-lg btn-success btn-block">
+        {{ form_end (form)}}
+        <iframe class="mappp" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10533.953443629187!2d1.847679!3d48.696146!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9bb6954c3902b047!2sBiker+Now!5e0!3m2!1sfr!2sfr!4v1562081394826!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    </div>
+    </div>
+
+
+
+{% endblock %}

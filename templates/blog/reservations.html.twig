@@ -1,0 +1,47 @@
+{% extends 'base.html.twig' %}
+{% form_theme form 'bootstrap_4_layout.html.twig' %}
+
+
+{% block body %}
+    <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/css?family=Lobster+Two&display=swap" rel="stylesheet">
+
+    <div id="pages4">
+
+        <div class="container">
+            <div class="taro">
+                <p class="tarifs">
+                    TARIFS
+                    <br>
+                    - 50 €   la séance pour les Adultes
+                    <br>
+                    - 30 €   la séance pour les Enfants
+                    <br>
+                    le paiement s'effectura sur place .
+                    <br>
+                </p>
+
+
+                {{ form_start(form) }}
+
+    {{ form_row(form.name,{'label':'Name','attr':{'placeholder':'votre nom '}}) }}
+    {{ form_row(form.email,{'label':'Email','attr':{'placeholder': ' votre adresse email'}}) }}
+    {{ form_row(form.age,{'label':'Age','attr':{'placeholder':'Veuillez saisir votre age '}}) }}
+    {{ form_row(form.date,{'label':'date','attr':{'placeholder':'Veuillez saisir votre date de reservations '}}) }}
+
+
+    <input type="submit" id="" value="Envoyer" class="btn btn-lg btn-success btn-block">
+
+
+            {{ form_end (form)}}
+            </div>
+            </div>
+
+
+
+        </div>
+</div>
+
+
+{% endblock %}

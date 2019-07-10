@@ -1,0 +1,11 @@
+framework:
+    router:
+        strict_requirements: ~
+        utf8: true
+easy_admin:
+
+    design:
+        brand_color: '#1ABC9C'
+    entities:
+        # change the following to the namespaces of your own entities
+        - App\Entity\People
