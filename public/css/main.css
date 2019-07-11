@@ -351,3 +351,24 @@ font-size: 30px;
 
     }
 }
+.gallery
+{ font-family: sans-serif;
+    text-align: center;
+    color: black;
+    margin:  30px  50px;
+}
+.imgg
+{
+    margin: 10px 50px   ;
+    filter: grayscale(100%);
+    transition: 1s;
+
+}
+.imgg:hover
+{
+    filter: grayscale(0%);
+}
+.gallery:hover
+ {
+     color: orange;
+ }
