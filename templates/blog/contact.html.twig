@@ -1,0 +1,68 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+
+    <div id="bcontact">
+
+    <div class="container" >
+    <h1 class="row justify-content-center">  </h1>
+
+    <div class="fef">
+
+        {% for message in app.flashes('succes') %}
+            <div class="alert alert-succes" >
+                {{ message }}
+            </div>
+        {% endfor %}
+        <!-- Contact Form -->
+        {{ form_start(form) }}
+
+        <div class="g-mb-20">
+            {{ form_label(form.name) }}
+
+            {% if form_errors(form.name) %}
+                <div class="alert alert-danger">
+                    {{ form_errors(form.name) }}
+                </div>
+            {% endif %}
+
+            {{ form_widget(form.name) }}
+        </div>
+
+        <div class="g-mb-20">
+            {{ form_label(form.email) }}
+
+            {% if form_errors(form.email) %}
+                <div class="alert alert-danger">
+                    {{ form_errors(form.email) }}
+                </div>
+            {% endif %}
+
+            {{ form_widget(form.email) }}
+        </div>
+
+
+
+        <div class="g-mb-20">
+            {{ form_label(form.message) }}
+
+            {% if form_errors(form.message) %}
+                <div class="alert alert-danger">
+                    {{ form_errors(form.message) }}
+                </div>
+            {% endif %}
+
+            {{ form_widget(form.message) }}
+        </div>
+
+        <button class="btn btn-lg u-btn-primary g-font-weight-600 g-font-size-default rounded-3 text-uppercase g-py-15 g-px-30" type="submit">
+            Envoyer
+        </button>
+
+        {{ form_end(form) }}
+        <!-- End Contact Form -->
+    </div>
+    </div>
+    </div>
+
+{% endblock %}
