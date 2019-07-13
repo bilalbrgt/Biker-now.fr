@@ -372,3 +372,19 @@ font-size: 30px;
  {
      color: orange;
  }
+
+.cookiee{
+    height: 100px;
+    width: 200px;
+    background-color: orange;
+    top: 30%;
+    position:absolute;
+    text-align: left;
+}
+.okk
+{
+    top: 41%;
+    position:absolute;
+    text-align: right;
+    right: 78%;
+      }
