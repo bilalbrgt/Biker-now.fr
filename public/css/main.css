@@ -380,11 +380,56 @@ font-size: 30px;
     top: 8%;
     position:absolute;
     text-align: left;
+
 }
 .okk
 {
-    top: 19%;
+    top: 17%;
     position:absolute;
     text-align: right;
     right: 78%;
+    color: black;
+
+
       }
+.okk:hover
+{
+    color: #5897fb;
+}
+@media screen and (max-width:700px) {
+    .okk {
+
+        top: 56%;
+        position:absolute;
+        text-align: right;
+        right: 78%;
+        color: black;
+
+    }
+    .cookiee{
+        height: 100px;
+        width: 200px;
+        background-color: orange;
+        top: 48%;
+        position:absolute;
+        text-align: left;
+
+    }
+
+.tarifs
+{
+    font-family: 'Lobster Two', cursive;
+    font-size: 21px;
+    text-align: center;
+    padding-top: 2%;
+}
+
+}
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color:blue;
+    border: 1px solid blue;
+    border-radius: .25rem;
+}

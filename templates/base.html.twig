@@ -1,13 +1,15 @@
-<!DOCTYPE html>
 
-    <head>
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
         <meta charset="UTF-8">
     <meta name="description" content=" passionés de moto cross en ile de france,paris vous pouvez venir chez Biker-now apprendre a faire de la moto "/>
         <title>{% block title %}Biker-now {% endblock %}</title>
 
         <script src="https://kit.fontawesome.com/1d7197e122.js"></script>
 
-        <link rel="shorcut icon" href="img/icon/icons%20page.jpg">
+        <link rel="shorcut icon" href="img/icon/icons%20page.jpg"  >
         <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -16,7 +18,7 @@
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-    <link rel="stylesheet" type="text/css " href="{{('/css/main.css') }}">
+    <link rel="stylesheet"  href="{{('/css/main.css') }}">
 
 
 
@@ -24,14 +26,14 @@
 
     </head>
 
+<body>
 
 
-
-    <div class="">
+    <div >
         <header>
 
             <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-                <a href="index.php"><img class="bn" src="img/icon/logo-blanc.png"> </a>
+                <a href="index.php"><img class="bn" src="img/icon/logo-blanc.png" alt="Biker-now" > </a>
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
@@ -51,8 +53,9 @@
                             <a class="nav-link" href="{{ path('reservations') }}"> Réservations</a>
                         </li>
 
-                        <li class="nav-item ">
+                        <li class="nav-item">
                             <a class="nav-link" href="{{ path('contact') }}">Contact </a>
+                        </li>
 
 
 
@@ -83,6 +86,7 @@
 
 
 </div>
+</body>
 
 
-
+</html>
