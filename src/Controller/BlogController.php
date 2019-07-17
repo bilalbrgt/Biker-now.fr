@@ -5,8 +5,7 @@ namespace App\Controller;
 use App\Entity\Contact;
 
 use App\Form\ContactType;
-use App\Notification\ContactNotification;
-use Doctrine\Common\Persistence\ObjectManager;
+use Swift_Mailer;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -40,43 +39,39 @@ class BlogController extends AbstractController
     }
 
 
-
-
-
-
     /**
      * Affichage du formulaire de contact
      *
      * @Route("/contact", name="contact")
      *
      * @param Request $request
-     * @param ObjectManager $manager
-     * @param ContactNotification $notification
      * @return Response
      * @throws \Twig\Error\LoaderError
      * @throws \Twig\Error\RuntimeError
      * @throws \Twig\Error\SyntaxError
      */
-    public function ind(Request $request, ObjectManager $manager, ContactNotification $notification)
+    public function ind(Request $request,  Swift_Mailer  $mailer)
     {
         $contact = new Contact();
         $form = $this->createForm(ContactType::class, $contact);
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
-            $manager->persist($contact);
-            $manager->flush();
+            $contact = $form->getData();
 
-            $notification->notify($contact);
 
-            $this->addFlash('success', 'Votre message a bien été envoyé');
+            $mail = (new \Swift_Message('Contact'))
+                ->setFrom($contact->getEmail())
+                ->setTo('bouakimbilel93@gmail.com')
+                ->setBody($contact->getMessage());
 
+            $mailer->send($mail);
             return $this->redirectToRoute('contact');
         }
-
         return $this->render('blog/contact.html.twig', [
-            'form' => $form->createView()
+            'form' => $form->createView(),
         ]);
     }
 }
+
 

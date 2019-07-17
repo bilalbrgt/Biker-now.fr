@@ -33,4 +33,13 @@ class FormulaireController extends AbstractController
         ]);
     }
 
+    /**
+     * @Route("/confi", name="confi")
+     */
+    public function confidenatialit()
+    {
+        return $this->render('blog/confi.html.twig');
+    }
 }
+
+

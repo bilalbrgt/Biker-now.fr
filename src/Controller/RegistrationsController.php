@@ -29,7 +29,7 @@ class RegistrationsController extends AbstractController
             $manager ->persist($User);
             $manager->flush();
 
-            return $this->redirectToRoute('user_registration');
+            return $this->redirectToRoute('app_login');
         }
 
         return $this->render(

@@ -323,9 +323,8 @@ font-size: 30px;
  .text1
  {
      text-align: center;
-     font-family: 'Garamond', arial;
-     font-size: 48px;
-     text-shadow: 4px 4px 4px #aaa;
+     font-family:  arial;
+     font-size: 25px;
 
  }
  p
@@ -341,16 +340,7 @@ font-size: 30px;
  }
 
 
-@media screen and (max-width:500px) {
-    .mappp {
-        flex-direction: column;
-        width: 95%;
-        margin: 2% auto;
-        top: 30px;
 
-
-    }
-}
 .gallery
 { font-family: sans-serif;
     text-align: center;
@@ -362,6 +352,9 @@ font-size: 30px;
     margin: 10px 50px   ;
     filter: grayscale(100%);
     transition: 1s;
+position: absolute;
+    margin-top: 135px;
+
 
 }
 .imgg:hover
@@ -396,35 +389,69 @@ font-size: 30px;
 {
     color: #5897fb;
 }
-@media screen and (max-width:700px) {
+
+
+@media screen and (max-width:768px) {
+
+    .
+
+
+
     .okk {
 
         top: 56%;
-        position:absolute;
+        position: absolute;
         text-align: right;
         right: 78%;
         color: black;
 
     }
-    .cookiee{
+
+    #initier {
+        font-family: fantasy;
+        font-size: 15px;
+    }
+
+
+    .cookiee {
         height: 100px;
         width: 200px;
         background-color: orange;
         top: 48%;
-        position:absolute;
+        position: absolute;
         text-align: left;
 
     }
 
-.tarifs
-{
-    font-family: 'Lobster Two', cursive;
-    font-size: 21px;
-    text-align: center;
-    padding-top: 2%;
-}
+    .tarifs {
+        font-family: 'Lobster Two', cursive;
+        font-size: 22px;
+        text-align: center;
+        padding-top: 9%;
+    }
+
+    .text1 {
+        text-align: center;
+        font-family: arial;
+        font-size: 15px;
+    }
+
+    .mappp {
+        flex-direction: column;
+        width: 49%;
+        margin: 1% auto;
+        top: 30px;
+
+
+    }
 
 }
+
+
+
+
+
+{}
 .navbar-toggler {
     padding: .25rem .75rem;
     font-size: 1.25rem;
@@ -433,11 +460,68 @@ font-size: 30px;
     border: 1px solid blue;
     border-radius: .25rem;
 }
-#initier
-{
-    font-family: fantasy;
+#initier {
+    font-family: Arial;
     font-size: 20px;
+}
 
+
+
+.imaage {
+    background-image:url(../img/modeles/cassel2-4284400.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* **************  POUR TABLETTE  ********************* */
+
+@media screen and (min-width: 768px) and (max-width:991.99px) {
+
+    .container{ width: 100%;}
+    .col1{ width: 25%; }
+    .col2{ width: 75%; }
+    .col3{
+        /*  width: 100%; */
+        display:none;
+    }
+
+
+
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* **************  POUR ECRAN  ********************* */
+
+@media screen and (min-width: 992px){
+
+    .container{width: 960px;}
+    .col1{ width: 200px;}
+    .col2{ width: 760px;}
 
 
 
