@@ -3,6 +3,8 @@
 
 
 {% block body %}
+    <script src="https://kit.fontawesome.com/1d7197e122.js"></script>
+
     <link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'>
     <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
     <link href="https://fonts.googleapis.com/css?family=Lobster+Two&display=swap" rel="stylesheet">
@@ -14,9 +16,10 @@
                 <p class="tarifs">
 
                  <br>
+                    <br>
                     TARIFS
 
-                    - 50 €   la séance pour les Adultes
+                    - 50 €   la séance pour les Adultes (Minimun 18 ans)
                     <br>
                     - 30 €   la séance pour les Enfants
                     <br>
@@ -31,9 +34,11 @@
     {{ form_row(form.email,{'label':'Email','attr':{'placeholder': ' votre adresse email'}}) }}
     {{ form_row(form.age,{'label':'Age','attr':{'placeholder':'Veuillez saisir votre age '}}) }}
     {{ form_row(form.date,{'label':'date','attr':{'placeholder':'Veuillez saisir votre date de reservations '}}) }}
+ <button class="butter">
+     Send
 
+ </button>
 
-    <input type="submit" id="" value="Envoyer" class="btn btn-lg btn-success btn-block">
 
 
             {{ form_end (form)}}

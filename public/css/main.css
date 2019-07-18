@@ -25,7 +25,7 @@ ul li {
 
 .bg-dark
 {
-    background-color: transparent!important;
+    background-color: #000000;
 }
 /************** fin de la modifications des items **********************/
 
@@ -46,7 +46,7 @@ ul li {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 
 }
 
@@ -56,7 +56,7 @@ ul li {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 
 }
 /******************* fin de la page web************************/
@@ -229,13 +229,8 @@ h2
 /* fin de lannimations svg*/
 
 /* meedia query pour le slider*/
-@media screen and (max-width:768px){
 
-    .slider{
-        margin-left: 0px;
-    }
 
-}
 /* fin du media query */
 
 /* modifications du text n2 de la page dacceuil */
@@ -257,7 +252,7 @@ h2
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height:100vh;
+    height:100%;
 
 
 }
@@ -265,17 +260,17 @@ h2
 {position: absolute;
     font-family: 'Cabin', Helvetica, Arial, sans-serif;
     line-height: 15%;
-        top: 95px;
+    top: 95px;
     color: #353b41;
 }
 
 #register {
-color: black;
+    color: black;
     background-image:url(../img/modeles/TrialsRising_1.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 
 
 }
@@ -287,14 +282,14 @@ color: black;
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 100vh;
+    height: 100%;
 }
 
 .ini1
 {
     color: orange;
 }
-
+/* modifications du pied de page */
 footer {
     background-color: black;
     padding: 2%;
@@ -303,41 +298,49 @@ footer {
 
 
 }
-
+/* fin de la modifications du footer */
 .fef{
-display: flex;
+    display: flex;
+
+
 }
 .mappp
 {
     margin-left: 2%;
 }
 
+
+/* modifiactions texte */
 .tarifs
-{
+ {
     font-family: 'Lobster Two', cursive;
-font-size: 30px;
+    font-size: 30px;
     text-align: center;
-    padding-top: 2%;
+}
+#initier {
+    font-family: Arial;
+    font-size: 20px;
 }
 
- .text1
- {
-     text-align: center;
-     font-family:  arial;
-     font-size: 25px;
 
- }
- p
- {
-     text-align: center;
-     font-family:serif;
+.text1
+{
+    text-align: center;
+    font-family:  arial;
+    font-size: 25px;
 
- }
- .de
- {
-     color:black;
+}
+p
+{
+    text-align: center;
+    font-family:serif;
 
- }
+}
+.de
+{
+    color:black;
+
+}
 
 
 
@@ -347,13 +350,29 @@ font-size: 30px;
     color: black;
     margin:  30px  50px;
 }
+/* fin modifications texte */
+
+
+
+
+/* css de limage de la page album */
 .imgg
 {
-    margin: 10px 50px   ;
+    padding: 150px 50px   ;
     filter: grayscale(100%);
     transition: 1s;
-position: absolute;
-    margin-top: 135px;
+
+
+
+}
+
+.imaage {
+    background-image:url(../img/modeles/cassel2-4284400.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100%;
+
 
 
 }
@@ -362,10 +381,13 @@ position: absolute;
     filter: grayscale(0%);
 }
 .gallery:hover
- {
-     color: orange;
- }
+{
+    color: orange;
+}
+/* fin du css de lalbum img */
 
+
+/* CSS pour le rectangle cookies */
 .cookiee{
     height: 100px;
     width: 200px;
@@ -384,145 +406,141 @@ position: absolute;
     color: black;
 
 
-      }
+}
 .okk:hover
 {
     color: #5897fb;
 }
-
-
-@media screen and (max-width:768px) {
-
-    .
-
-
-
-    .okk {
-
-        top: 56%;
-        position: absolute;
-        text-align: right;
-        right: 78%;
-        color: black;
-
-    }
-
-    #initier {
-        font-family: fantasy;
-        font-size: 15px;
-    }
-
-
-    .cookiee {
-        height: 100px;
-        width: 200px;
-        background-color: orange;
-        top: 48%;
-        position: absolute;
-        text-align: left;
-
-    }
-
-    .tarifs {
-        font-family: 'Lobster Two', cursive;
-        font-size: 22px;
-        text-align: center;
-        padding-top: 9%;
-    }
-
-    .text1 {
-        text-align: center;
-        font-family: arial;
-        font-size: 15px;
-    }
-
-    .mappp {
-        flex-direction: column;
-        width: 49%;
-        margin: 1% auto;
-        top: 30px;
-
-
-    }
-
-}
+/* fin du css pour le rectangle cookies */
 
 
 
 
-
-{}
-.navbar-toggler {
-    padding: .25rem .75rem;
-    font-size: 1.25rem;
-    line-height: 1;
-    background-color:blue;
-    border: 1px solid blue;
-    border-radius: .25rem;
-}
-#initier {
-    font-family: Arial;
-    font-size: 20px;
-}
-
-
-
-.imaage {
-    background-image:url(../img/modeles/cassel2-4284400.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    width: 100%;
-    height: 100vh;
-
-
-
-}
-
-
-
-
-
-
-
-
-
-/* **************  POUR TABLETTE  ********************* */
-
-@media screen and (min-width: 768px) and (max-width:991.99px) {
-
-    .container{ width: 100%;}
-    .col1{ width: 25%; }
-    .col2{ width: 75%; }
-    .col3{
-        /*  width: 100%; */
-        display:none;
+/*** debut responsive */
+@media screen and (max-width:768px)
+{
+    .bg-dark
+    {
+        background-color: transparent !important;
     }
 
 
 
 
+   nav a  {
+        color: #ffc107;
+        text-decoration: none;
+        background-color: rgb(0, 0, 0);
+    }
+        @keyframes slide {
+            0% {
+                background: url(../img/images-sliders/New-Project.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            50% {
+                background: url(../img/images-sliders/New-Project-1.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+
+            100% {
+                background: url(../img/images-sliders/New-Project-3.png);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+        }
+
+        .fef {
+            display: flex;
+            flex-direction: column;
+
+        }
 
 
+        .okk {
+
+            top: 56%;
+            position: absolute;
+            text-align: right;
+            right: 78%;
+            color: black;
+
+        }
+
+        #initier {
+            font-family: Arial;
+            font-size: 15px;
+        }
 
 
-}
+        .cookiee {
+            height: 100px;
+            width: 200px;
+            background-color: orange;
+            top: 48%;
+            position: absolute;
+            text-align: left;
 
+        }
 
+        .tarifs {
+            font-family: 'Lobster Two', cursive;
+            font-size: 22px;
+            text-align: center;
+            padding-top: 9%;
+        }
 
+        .text1 {
+            text-align: center;
+            font-family: arial;
+            font-size: 15px;
+        }
 
+        .mappp {
+            width: 100%;
+            margin: 5% auto;
+            top: 30px;
+        }
 
+        form {
+            width: 100%;
+        }
 
+    }
+    /****** fin media query*/
+    /* code pour le butons responsive */
+    .navbar-toggler {
+        padding: .25rem .75rem;
+        font-size: 1.25rem;
+        line-height: 1;
+        background-color: black;
+        border: 1px solid white;
+        border-radius: .25rem;
+    }
 
+    /* fin du  code pour le butons responsive */
+    /********* code buttons */
+    .buttonss {
+        padding: 6px 0 6px 0;
+        font: Bold 13px Arial;
+        background: #d34836;
+        color: #fff;
+        width: 140px;
+        border-radius: 2px;
+        border: none;
+    }
 
+    .butter {
+        padding: 6px 0 6px 0;
+        font: bold 13px Arial;
+        background: #478bf9;
+        color: #fff;
+        border-radius: 2px;
+        width: 140px;
+        border: none;
 
-/* **************  POUR ECRAN  ********************* */
+    }
 
-@media screen and (min-width: 992px){
-
-    .container{width: 960px;}
-    .col1{ width: 200px;}
-    .col2{ width: 760px;}
-
-
-
-}
+    /* fin des boutons */
