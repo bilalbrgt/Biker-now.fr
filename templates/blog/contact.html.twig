@@ -9,20 +9,15 @@
 
     <div class="fef">
 
-        {% for message in app.flashes('succes') %}
-            <div class="alert alert-succes" >
-                {{ message }}
-            </div>
-        {% endfor %}
+
         <!-- Contact Form -->
         {{ form_start(form) }}
 
         <div class="g-mb-20">
-            {{ form_label(form.name) }}
+
 
             {% if form_errors(form.name) %}
                 <div class="alert alert-danger">
-                    {{ form_errors(form.name) }}
                 </div>
             {% endif %}
 
@@ -30,8 +25,7 @@
         </div>
 
         <div class="g-mb-20">
-            {{ form_label(form.email) }}
-
+<br>
             {% if form_errors(form.email) %}
                 <div class="alert alert-danger">
                     {{ form_errors(form.email) }}
@@ -41,8 +35,7 @@
             {{ form_widget(form.email) }}
         </div>
         <div class="g-mb-20">
-            {{ form_label(form.message) }}
-
+<br>
             {% if form_errors(form.message) %}
                 <div class="alert alert-danger">
                     {{ form_errors(form.message) }}
@@ -50,8 +43,6 @@
             {% endif %}
 
             {{ form_widget(form.message) }}
-        </div>
-
 
 
 
@@ -69,6 +60,13 @@
         <button class="buttonss">
             Envoyer
         </button>
+        </div>
+        <br>
+        {% for message in app.flashes('success') %}
+            <div class="alert alert-success" >
+                {{ message }}
+            </div>
+        {% endfor %}
 
         {{ form_end(form) }}
         <!-- End Contact Form -->

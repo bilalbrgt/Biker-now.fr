@@ -26,6 +26,7 @@ class FormulaireController extends AbstractController
         if ($form->isSubmitted()&& $form ->isValid()) {
             $manager ->persist($Reserver);
             $manager->flush();
+            $this->addFlash('success','votre reservations a bien etais pris en compte');
             return $this->redirectToRoute('reservations');
         }
         return $this->render('blog/reservations.html.twig',[

@@ -64,6 +64,7 @@ class BlogController extends AbstractController
                 ->setFrom($contact->getEmail())
                 ->setTo('bouakimbilel93@gmail.com')
                 ->setBody($contact->getMessage());
+            $this->addFlash('success','votre message  a bien été envoyée');
 
             $mailer->send($mail);
             return $this->redirectToRoute('contact');

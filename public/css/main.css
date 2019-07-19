@@ -291,7 +291,7 @@ h2
 }
 /* modifications du pied de page */
 footer {
-    background-color: black;
+    background-color: #000000;
     padding: 2%;
     text-align: center;
     color: white;
@@ -388,29 +388,8 @@ p
 
 
 /* CSS pour le rectangle cookies */
-.cookiee{
-    height: 100px;
-    width: 200px;
-    background-color: orange;
-    top: 8%;
-    position:absolute;
-    text-align: left;
-
-}
-.okk
-{
-    top: 17%;
-    position:absolute;
-    text-align: right;
-    right: 78%;
-    color: black;
 
 
-}
-.okk:hover
-{
-    color: #5897fb;
-}
 /* fin du css pour le rectangle cookies */
 
 
@@ -419,6 +398,25 @@ p
 /*** debut responsive */
 @media screen and (max-width:768px)
 {
+.quadd
+{
+    display: none;
+}
+    .imgg {
+        padding : 150px 0px 20px 0px;
+        display : flex;
+        flex-wrap : wrap;
+        transition: 1s;
+        filter : grayscale(100%);
+    }
+    .imgg img {
+        width : 90%;
+        margin : 3%;
+    }
+    .imgg a {
+        width: 33%;
+        text-align:center;
+    }
     .bg-dark
     {
         background-color: transparent !important;
@@ -431,6 +429,7 @@ p
         color: #ffc107;
         text-decoration: none;
         background-color: rgb(0, 0, 0);
+       text-align: center;
     }
         @keyframes slide {
             0% {
