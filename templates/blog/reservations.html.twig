@@ -12,28 +12,63 @@
     <div id="pages4">
 
         <div class="container">
-            <div class="taro">
-                <p class="tarifs">
+<br>
+                <h1 class="reserve"> Réserve vite </h1>
 
-                 <br>
-                    <br>
-                    TARIFS
+                <div class="fleee">
 
-                    - 50 €   la séance pour les Adultes (Minimun 18 ans)
-                    <br>
-                    - 30 €   la séance pour les Enfants
-                    <br>
-                    le paiement s'effectura sur place .
-                    <br>
-                </p>
 
-                <div class="formm">
+                <table>
+                    <tr class="ligne-impaire">
+                        <td> Horaires</td>
+
+                        <td> Catégories</td>
+                        <td> Exercices</td>
+                        <td> Tarifs</td>
+                    </tr>
+                    <tr class="ligne-paire">
+                        <td>   Lundi 10h-11h</td>
+                        <td>   ENFANTS</td>
+                        <td>   Initiations</td>
+                        <td>   30€</td>
+
+                    </tr>
+                    <tr class="ligne-impaire">
+                        <td>  Mardi 15h-16h</td>
+                        <td>  Adultes</td>
+                        <td>  Initiations  </td>
+                        <td>  50€ </td>
+                    </tr >  <tr class="ligne-paire">
+                        <td>  Mercredi 10h-11h</td>
+                        <td>  Adultes</td>
+                        <td>  Initiations  </td>
+                        <td>  50€ </td>
+                    </tr>  <tr  class="ligne-impaire">
+                        <td>  Vendredi 15h-16h</td>
+                        <td>  Adultes/Enfants</td>
+                        <td>  Mise en pratique
+                            Avec une course
+                        </td>
+                        <td>  25€ </td>
+                    </tr>
+                </table>
+                    <br>
                 {{ form_start(form) }}
-
+                    <br>
+                    {% for message in app.flashes('success') %}
+                        <div class="alert alert-success" >
+                            {{ message }}
+                        </div>
+                    {% endfor %}
     {{ form_row(form.name,{'label':'Name','attr':{'placeholder':'votre nom '}}) }}
-    {{ form_row(form.email,{'label':'Email','attr':{'placeholder': ' votre adresse email'}}) }}
-    {{ form_row(form.age,{'label':'Age','attr':{'placeholder':'Veuillez saisir votre age '}}) }}
-    {{ form_row(form.date,{'label':'date','attr':{'placeholder':'Veuillez saisir votre date de reservations '}}) }}
+
+                    {{ form_row(form.email,{'label':'Email','attr':{'placeholder': ' votre adresse email'}}) }}
+                            {{ form_row(form.isAttending,{'label':'Categories','attr':{'placeholder':'Veuillez saisir votre date de reservations '}}) }}
+
+                    {{ form_row(form.startTime,{'label':'heure','attr':{'placeholder':'Veuillez saisir votre date de reservations '}}) }}
+                    {{ form_row(form.date,{'label':'date','attr':{'placeholder':'Veuillez saisir votre date de reservations '}}) }}
+
+
  <button class="butter">
      Send
 
@@ -43,19 +78,19 @@
 
             {{ form_end (form)}}
                     <br>
-                    {% for message in app.flashes('success') %}
-                        <div class="alert alert-success" >
-                            {{ message }}
-                        </div>
-                    {% endfor %}
-                </div>
+
+
+
+
+
             </div>
             </div>
 
-
+            </div>
 
         </div>
 </div>
 
 
+    </div>
 {% endblock %}

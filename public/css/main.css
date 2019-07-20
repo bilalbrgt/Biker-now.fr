@@ -24,8 +24,7 @@ ul li {
 
 
 .bg-dark
-{
-    background-color: #000000;
+{background-color: transparent;!important;
 }
 /************** fin de la modifications des items **********************/
 
@@ -248,7 +247,7 @@ h2
 #pages4
 {
 
-    background-image:url(../img/modeles/imgrogner.png);
+    background-image:url(../img/modeles/reserveme.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -307,12 +306,15 @@ footer {
 .mappp
 {
     margin-left: 2%;
+    margin-bottom: 20px;
+    margin-top: -42px;
+
 }
 
 
 /* modifiactions texte */
 .tarifs
- {
+{
     font-family: 'Lobster Two', cursive;
     font-size: 30px;
     text-align: center;
@@ -328,6 +330,7 @@ footer {
     text-align: center;
     font-family:  arial;
     font-size: 25px;
+    margin-top: -70px;
 
 }
 p
@@ -352,7 +355,17 @@ p
 }
 /* fin modifications texte */
 
+.reserve
+{
+    color: black;
+    font-family: "The Queen ";
+    font-style: inherit;
+    font-size: 2.5em;
+    text-align: center;
+    margin-left: -80%;
+    margin-top: 36px;
 
+}
 
 
 /* css de limage de la page album */
@@ -361,6 +374,7 @@ p
     padding: 150px 50px   ;
     filter: grayscale(100%);
     transition: 1s;
+    margin-top: -198px;
 
 
 
@@ -389,7 +403,37 @@ p
 
 /* CSS pour le rectangle cookies */
 
+.fleee
+{
+    display : flex;
+    align-items :center;
+    margin : 6% 0 4% 0;
+    flex-direction: row-reverse;
+}
+table
+{
+    margin-top: -177px;
+    margin-left: 50px;
 
+}
+.Albums
+{
+    color: black;
+    margin-top: 50px;
+    font-family: "The Queen ";
+    font-style: inherit;
+    font-size: 2.5em;
+    text-align: center;
+}
+.contactt
+{ color: black;
+    font-family: "The Queen ";
+    font-style: inherit;
+    font-size: 2.5em;
+    text-align: center;
+    margin-left: -80%;
+
+}
 /* fin du css pour le rectangle cookies */
 
 
@@ -397,11 +441,46 @@ p
 
 /*** debut responsive */
 @media screen and (max-width:768px)
+
 {
-.quadd
-{
-    display: none;
-}
+    .contactt
+    { color: black;
+        font-family: "The Queen ";
+        font-style: inherit;
+        font-size: 2.5em;
+        text-align: center;
+        margin-left: -70%;
+
+    }
+    .Albums
+    {
+        color: black;
+        margin-top: -4px;
+        font-family: "The Queen ";
+        font-style: inherit;
+        font-size: 2.5em;
+        text-align: center;
+    }
+
+    .fleee
+    {
+        display: flex;
+        flex-direction: column;
+
+    }
+    table
+    {
+        margin-top: -61px;
+        margin-left: 25px;
+        align-items: center;
+
+
+    }
+
+    .quadd
+    {
+        display: none;
+    }
     .imgg {
         padding : 150px 0px 20px 0px;
         display : flex;
@@ -422,124 +501,178 @@ p
         background-color: transparent !important;
     }
 
+    .reserve
+    {
+        color: black;
+        font-family: "The Queen ";
+        font-style: inherit;
+        font-size: 2.5em;
+        text-align: center;
+        margin-left: -43%;
+        margin-top: 0px;
+
+    }
 
 
 
-   nav a  {
+
+    nav a  {
         color: #ffc107;
         text-decoration: none;
         background-color: rgb(0, 0, 0);
-       text-align: center;
+        text-align: center;
     }
-        @keyframes slide {
-            0% {
-                background: url(../img/images-sliders/New-Project.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-
-            50% {
-                background: url(../img/images-sliders/New-Project-1.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
-
-            100% {
-                background: url(../img/images-sliders/New-Project-3.png);
-                background-repeat: no-repeat;
-                background-size: cover;
-            }
+    @keyframes slide {
+        0% {
+            background: url(../img/images-sliders/New-Project.png);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
-        .fef {
-            display: flex;
-            flex-direction: column;
-
+        50% {
+            background: url(../img/images-sliders/New-Project-1.png);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
 
-
-        .okk {
-
-            top: 56%;
-            position: absolute;
-            text-align: right;
-            right: 78%;
-            color: black;
-
+        100% {
+            background: url(../img/images-sliders/New-Project-3.png);
+            background-repeat: no-repeat;
+            background-size: cover;
         }
-
-        #initier {
-            font-family: Arial;
-            font-size: 15px;
-        }
-
-
-        .cookiee {
-            height: 100px;
-            width: 200px;
-            background-color: orange;
-            top: 48%;
-            position: absolute;
-            text-align: left;
-
-        }
-
-        .tarifs {
-            font-family: 'Lobster Two', cursive;
-            font-size: 22px;
-            text-align: center;
-            padding-top: 9%;
-        }
-
-        .text1 {
-            text-align: center;
-            font-family: arial;
-            font-size: 15px;
-        }
-
-        .mappp {
-            width: 100%;
-            margin: 5% auto;
-            top: 30px;
-        }
-
-        form {
-            width: 100%;
-        }
-
-    }
-    /****** fin media query*/
-    /* code pour le butons responsive */
-    .navbar-toggler {
-        padding: .25rem .75rem;
-        font-size: 1.25rem;
-        line-height: 1;
-        background-color: black;
-        border: 1px solid white;
-        border-radius: .25rem;
     }
 
-    /* fin du  code pour le butons responsive */
-    /********* code buttons */
-    .buttonss {
-        padding: 6px 0 6px 0;
-        font: Bold 13px Arial;
-        background: #d34836;
-        color: #fff;
-        width: 140px;
-        border-radius: 2px;
-        border: none;
-    }
-
-    .butter {
-        padding: 6px 0 6px 0;
-        font: bold 13px Arial;
-        background: #478bf9;
-        color: #fff;
-        border-radius: 2px;
-        width: 140px;
-        border: none;
+    .fef {
+        display: flex;
+        flex-direction: column;
 
     }
 
-    /* fin des boutons */
+
+    .okk {
+
+        top: 56%;
+        position: absolute;
+        text-align: right;
+        right: 78%;
+        color: black;
+
+    }
+
+    #initier {
+        font-family: Arial;
+        font-size: 15px;
+    }
+
+
+    .cookiee {
+        height: 100px;
+        width: 200px;
+        background-color: orange;
+        top: 48%;
+        position: absolute;
+        text-align: left;
+
+    }
+
+    .tarifs {
+        font-family: 'Lobster Two', cursive;
+        font-size: 22px;
+        text-align: center;
+        padding-top: 9%;
+    }
+
+    .text1 {
+        text-align: center;
+        font-family: arial;
+        font-size: 15px;
+    }
+
+    .mappp {
+        width: 100%;
+        margin: 5% auto;
+        top: 30px;
+    }
+
+    form {
+        width: 100%;
+    }
+
+}
+/****** fin media query*/
+/* code pour le butons responsive */
+.navbar-toggler {
+    padding: .25rem .75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    background-color: black;
+    border: 1px solid white;
+    border-radius: .25rem;
+}
+
+/* fin du  code pour le butons responsive */
+/********* code buttons */
+.buttonss {
+    padding: 6px 0 6px 0;
+    font: Bold 13px Arial;
+    background: #d34836;
+    color: #fff;
+    width: 140px;
+    border-radius: 2px;
+    border: none;
+}
+
+.butter {
+    padding: 6px 0 6px 0;
+    font: bold 13px Arial;
+    background: #478bf9;
+    color: #fff;
+    border-radius: 2px;
+    width: 140px;
+    border: none;
+
+}
+
+/* fin des boutons */
+
+@font-face {
+    font-family: "The Queen ";
+    src: url(" The Queen-Regular.ttf ");
+}
+td {
+    border: 1px solid black;
+}
+.ligne-impaire
+{
+    background-color: white;
+}
+.ligne-paire{
+
+    background-color: orange;
+}
+
+.twt
+{
+    color: #1dcaff;
+}
+.inss
+{
+    color: mediumvioletred;
+}
+
+.fbbbb
+{
+    color: #0000cc;
+}
+
+.noww
+{
+    color: black;
+    font-family: "The Queen ";
+    font-style: inherit;
+    font-size: 2.5em;
+    text-align: center;
+    margin-left: 0px;
+    margin-top: -34px;
+
+}

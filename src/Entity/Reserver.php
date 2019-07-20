@@ -34,16 +34,14 @@ class Reserver
      */
     private $email;
 
-    /**
-     * @ORM\Column(type="integer")
-     */
-    private $age;
+
 
     /**
      * @ORM\Column(type="date")
      */
     private $date;
-
+public $startTime;
+public $isAttending;
     public function getId(): ?int
     {
         return $this->id;
@@ -73,17 +71,7 @@ class Reserver
         return $this;
     }
 
-    public function getAge(): ?int
-    {
-        return $this->age;
-    }
 
-    public function setAge(int $age): self
-    {
-        $this->age = $age;
-
-        return $this;
-    }
 
     public function getDate(): ?\DateTimeInterface
     {
@@ -95,5 +83,6 @@ class Reserver
         $this->date = $date;
 
         return $this;
+
     }
 }
