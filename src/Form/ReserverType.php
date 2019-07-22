@@ -5,6 +5,7 @@ namespace App\Form;
 use App\Entity\Reserver;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
+use Symfony\Component\Form\Extension\Core\Type\DateType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 use Symfony\Component\Form\Extension\Core\Type\TimeType;
@@ -18,6 +19,7 @@ class ReserverType extends AbstractType
             ->add('name')
             ->add('email')
             ->add('date')
+
             ->add('startTime', TimeType::class, [
         'input'  => 'datetime',
         'widget' => 'choice',

@@ -55,11 +55,7 @@
                     <br>
                 {{ form_start(form) }}
                     <br>
-                    {% for message in app.flashes('success') %}
-                        <div class="alert alert-success" >
-                            {{ message }}
-                        </div>
-                    {% endfor %}
+
     {{ form_row(form.name,{'label':'Name','attr':{'placeholder':'votre nom '}}) }}
 
                     {{ form_row(form.email,{'label':'Email','attr':{'placeholder': ' votre adresse email'}}) }}

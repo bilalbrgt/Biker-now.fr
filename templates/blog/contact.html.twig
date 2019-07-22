@@ -47,15 +47,13 @@
 
 
         <div class="g-mb-20">
-            {{ form_label(form.message) }}
-
+        <br>
             {% if form_errors(form.message) %}
                 <div class="alert alert-danger">
                     {{ form_errors(form.message) }}
                 </div>
             {% endif %}
 
-            {{ form_widget(form.message) }}
         </div>
         <button class="buttonss">
             Envoyer
